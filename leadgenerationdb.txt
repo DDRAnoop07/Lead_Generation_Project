@@ -1,0 +1,59 @@
+Employee
+--------
+employeeid
+firstname
+lastname
+dob
+gender
+emailid
+mobileno
+address
+state
+city
+designation
+managerid
+photograph
+
+
+Manager
+-------
+managerid
+managername
+dob
+gender
+address
+state
+city
+mobileno
+emailid
+picture
+
+customer
+--------
+id
+firstname
+lastname
+dob
+emailid
+mobileno
+alternateno
+organizationname
+address
+state
+city
+picture
+
+
+1]Employee.objects.save()
+2]Employee.objects.all()
+3]Employee.objects.raw() single table
+4]Employee.objects.get(pk=1)
+5]Employee.objects.filter(city='Gwalior')
+6]Employee.objects.all()[5:10]
+7] b = Employee.objects.get(pk=1)
+# This will delete the Blog and all of its Entry objects.
+   b.delete()
+8]obj = Employee.objects.get(pk=pk)
+obj.name = "some_new_value"
+obj.save()
+
